@@ -111,6 +111,7 @@ for (i in 1:length(docs)) {
 
 #Calculate SER
 
+##replace with whatever dose level you want 
 
 i<-1
 j<-1
@@ -124,4 +125,22 @@ for (j in 1:nrow(DOSE37)) {
 
 
 
+
+##If you want all the different SER levels:
+
+effect_levels<-c(DOSE70, DOSE50, DOSE30, DOSE10)
+result_levels<-c(FINAL70, FINAL50, FINAL30, FINAL10)
+
+i<-1
+j<-1
+k<-1
+for (k in 1:length(k)){
+  
+  for (j in 1:nrow(effect_levels[k])) {
+    
+    for (i in 1:ncol(effect_levels[k])){
+      
+      result_leve[j,i]<-DOSE37[j,1]/DOSE37[j,i]
+}
+}}
 
