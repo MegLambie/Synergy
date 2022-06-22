@@ -13,7 +13,7 @@ ComputeDX<-function(a,b,S) {
 
 ##Where are your data files located?
 ##Need them in a very simple data format with surviving fraction, drug doses as columns, radiation doses as rows
-##setwd("/Users/meghanlambie/Documents/R Work For Project/Paper2/abema")
+setwd("/Users/meghanlambie/Documents/R Work For Project/Paper2/abema")
 
 ##Write out all your cell lines here 
 cell_lines<-c("Cal33", "KYSE410", "KYSE510", "UT-SCC-60A", "UT-SCC-74B", "UT-SCC-79B")
